@@ -2,8 +2,22 @@
 
 SVG の学習や情報収集のまとめ
 
+__基本構文__
+
 ```xml
-<svg version="1.1" viewBox="[x] [y] [width] [height]">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="[width]" height="[height]" viewBox="[x] [y] [width] [height]">
+  <defs>
+    <line/>
+    <circle/>
+    <ellipse/>
+    <polygon/>
+    <polyline/>
+    <rect/>
+    <path d=""/>
+    
+    <g>
+    </g>
+  </defs>
 </svg>
 ```
 
