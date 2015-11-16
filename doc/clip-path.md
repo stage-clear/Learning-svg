@@ -1,6 +1,6 @@
 # Clip Path
 
-__例__
+__例) 円形に切り抜く__
 
 ```xml
 <img class="mask" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699748-icon-102-document-file-xml-512.png">
