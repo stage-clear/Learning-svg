@@ -4,10 +4,12 @@ SVG の学習や情報収集のまとめ
 
 ```xml
 <svg version="1.1" viewBox="[x] [y] [width] [height]">
+</svg>
 ```
 
 ```css
 svg {
+  fill: [color];                /* 塗りつぶしの色 */
   /* Outline Styles */
   stroke: [color];              /* アウトラインの色 */
   stroke-width: [size];         /* 線の太さ */
@@ -28,5 +30,6 @@ svg {
 
 - [SVG | MDN](https://developer.mozilla.org/ja/docs/Web/SVG)
 - [SVGコードの基本 | CodeGrid](https://app.codegrid.net/entry/svg-basic)
+- [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
 - [スタイル付け – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/styling.html)
 - [svg要素の基本的な使い方まとめ](http://www.h2.dion.ne.jp/~defghi/svgMemo/svgMemo.htm)
