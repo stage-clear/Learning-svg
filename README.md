@@ -2,6 +2,10 @@
 
 Node.js の学習や情報収集のまとめ
 
+## ツール
+
+- [SVG Path Builder](http://anthonydugois.com/svg-path-builder/) - SVGのパスを生成する
+
 ## リファレンス
 
 - [SVG | MDN](https://developer.mozilla.org/ja/docs/Web/SVG)
