@@ -39,6 +39,7 @@ svg {
 ## ツール
 
 - [SVG Path Builder](http://anthonydugois.com/svg-path-builder/) - SVGのパスを生成する
+- [SVG Icons - Ready to use SVG Icons for the web.](http://svgicons.sparkk.fr/) - SVG アイコン
 
 
 ## リファレンス
