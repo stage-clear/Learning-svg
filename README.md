@@ -24,35 +24,35 @@ __基本構文__
 </svg>
 ```
 
-__CSS プロパティ__
+__プロパティ__
 
 ```css
-svg {
-  fill: [color];                /* 塗りつぶしの色 */
-  /* Outline Styles */
-  stroke: [color];              /* アウトラインの色 */
-  stroke-width: [size];         /* 線の太さ */
-  stroke-opacity: [opacity];    /* 透明度 */
-  stroke-linecap: [keyword];    /* 線の端のスタイル (butt|round|square) */
-  stroke-linejoin: [keyword];   /* 線の頂点の下いる (miter|round|bevel) */
-  stroke-dasharray: [numbers];  /* 点線や破線のパターン */
-  stroke-dashoffset: [number];  /* 点線の始まりの位置 */
-}
+/*
+ * @prop {fill} [color] - 塗りつぶしの色
+ * @prop {stroke} [color] - アウトラインの色
+ * @prop {stroke-with} [size] - 線の太さ
+ * @prop {stroke-opacity} [opacity] - 透明度
+ * @prop {stroke-linecap} [butt | round | square] - 線の端のスタイル
+ * @prop {stroke-linejoin} [miter | round | bevel] - 線の頂点の下いる
+ * @prop {stroke-dasharray} [numbers] - 点線や破線のパターン
+ * @prop {stroke-dashoffset} [number] - 点線の始まりの位置
+ */
 ```
 
 ## パス
 
-|コマンド|説明|
-|:--|:--|
-|`M` `m`| Move to |
-|`L` `l`| Line to |
-|`H` `h`| Horizontal line |
-|`V` `v`| Vertical line |
-|`Z` `z`| Close path |
-|`C` `c`| bézier curve |
-|`S` `s`| bézier curve |
-|`T` `t`| bézier curve |
-
+|コマンド|説明|パラメータ|
+|:--|:--|:--|
+|`M` `m`| Move to |`M [x] [y]`|
+|`L` `l`| Line to |`L [x] [y]`|
+|`H` `h`| Horizontal line |`H [x]`|
+|`V` `v`| Vertical line |`V [y]`|
+|`Z` `z`| Close path |`Z`|
+|`C` `c`| Cubic bezier curve |`C [x1] [y1], [x2] [y2], [x] [y]`|
+|`S` `s`| Cubic bezier curve |`S [x2] [y2] [x] [y]`|
+|`Q` `q`| Quadratic bezier curve |`Q [x1] [y1], [x] [y]`|
+|`T` `t`| Quadratic bezier curve |`T [x] [y]`|
+|`A` `a`| Arc |`A [rx] [ry] [x-axis-rotation] [large-arc-flag] [sweep-flag] [x] [y]`|
 
 
 ## ツール
