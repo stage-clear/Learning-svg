@@ -24,6 +24,14 @@ __基本構文__
       <rect x="0" y="0" width="25" height="25" fill="url(#Gradient1)"/>
       <circle cx="25" cy="25" r="20" fill="url(#Gradient2)" fill-opacity=".5"/>
     </pattern>
+    
+    <clipPath id="Clip">
+      <rect x="0" y="0" width="200" height="100"/>
+    </clipPath>
+    
+    <mask id="Mask">
+      <rect x="0" y="0" width="200" height="200" fill="url(#Gradient1)"/>
+    </mask>
   </defs>
 
   <rect x="[length]" y="[length]" width="[size]" height="[size]"/>
@@ -34,16 +42,26 @@ __基本構文__
   <polyline points="[x1],[y1] [x2],[y2] [x3],[y3] ..."/>
   <polygon points="[x1],[y1] [x2],[y2] [x3],[y3] ..."/>
   <path d="[command1 x1 y1] [command2 x2 y2] ..."/>
-  <text x="[length]" y="[length]" font-size="[length]" text-anchor="[keyword]" fill="[color]">Text</text>
+  <text x="[length]" y="[length]" font-size="[size]" text-anchor="[keyword]" fill="[color]">
+    <tspan font-weight="[weight]" fill="[color]">Hello</tspan> World
+    <tref xlink:href="#example"/>
+  </text>
 
-  <!-- 例) id:Gradient1 を呼び出す -->
+  <!-- 例) Call "#Gradient1" -->
   <rect x="10" y="10" rx="15" ry="15" width="100" height="100" fill="url(#Gradient1)"/>
-  <!-- 例) id:Gradient2 を呼び出す -->
+  <!-- 例) Call "#Gradient2" -->
   <rect x="10" y="120" rx="15" ry="15" width="100" height="100" fill="url(#Gradient2)"/>
-  <!-- 例) id:Pattern を呼び出す -->
+  <!-- 例) Call "#Pattern" -->
   <rect x="120" y="10" width="200" height="200" fill="url(#Pattern)" stroke="black"/>
+  <!-- 例) Text path -->
+  <text><textPath xlink:href="#path">Hello world</textPath></text>
+  <!-- 例) Clipping -->
+  <circle cx="100" cy="100" r="100" clip-path="url(#Clip)"/>
+  <!-- 例) Masking -->
+  <rect x="10" y="10" width="100" height="100" mask="url(#Mask)"/>
 
-  <g>
+
+  <g transform="translate(30, 40) rotate(45)">
   </g>
 </svg>
 ```
