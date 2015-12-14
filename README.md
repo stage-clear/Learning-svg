@@ -43,8 +43,10 @@ __基本構文__
   <polygon points="[x1],[y1] [x2],[y2] [x3],[y3] ..."/>
   <path d="[command1 x1 y1] [command2 x2 y2] ..."/>
   <text x="[length]" y="[length]" font-size="[size]" text-anchor="[keyword]" fill="[color]">
-    <tspan font-weight="[weight]" fill="[color]">Hello</tspan> World
-    <tref xlink:href="#example"/>
+    Hello World
+    <tspan x="[x]" dx="[dx]" rotate="[deg]" textLength="[length]">Hello</tspan> World
+    <tref xlink:href="[Path]"/>
+    <textPath xlink:href="[Path]">Hello world</textPath>
   </text>
 
   <!-- 例) Call "#Gradient1" -->
@@ -54,7 +56,7 @@ __基本構文__
   <!-- 例) Call "#Pattern" -->
   <rect x="120" y="10" width="200" height="200" fill="url(#Pattern)" stroke="black"/>
   <!-- 例) Text path -->
-  <text><textPath xlink:href="#path">Hello world</textPath></text>
+  <text></text>
   <!-- 例) Clipping -->
   <circle cx="100" cy="100" r="100" clip-path="url(#Clip)"/>
   <!-- 例) Masking -->
@@ -71,9 +73,11 @@ __プロパティ__
 ```css
 /*
  * @prop {fill} [color] - 塗りつぶしの色
+ * @prop {fill-rule} [nonzero | evenodd | inherit] - 図形の内側の領域を定義する
+ * @prop {fill-opacity} [opacity] - 塗りつぶしの透明度
  * @prop {stroke} [color] - アウトラインの色
  * @prop {stroke-with} [size] - 線の太さ
- * @prop {stroke-opacity} [opacity] - 透明度
+ * @prop {stroke-opacity} [opacity] - 線の透明度
  * @prop {stroke-linecap} [butt | round | square] - 線の端のスタイル
  * @prop {stroke-linejoin} [miter | round | bevel] - 線の頂点の下いる
  * @prop {stroke-dasharray} [numbers] - 点線や破線のパターン
