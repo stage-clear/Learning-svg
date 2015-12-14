@@ -13,10 +13,17 @@ __基本構文__
       <stop offset="50%" stop-color="black" stop-opacity="0"/>
       <stop offset="100%" stop-color="blue"/>
     </linearGradient>
+
     <radialGradient id="Gradient2" cx=".5" cy=".5" r=".5" fx=".25" fy=".25" spreadMethod="repeat" gradientUnits="">
       <stop offset="0%" stop-color="red"/>
       <stop offset="100%" stop-color="blue"/>
     </radialGradient>
+
+    <pattern id="Pattern" x=".05" y=".05" width=".25" height=".25">
+      <rect x="0" y="0" width="50" height="50" fill="skyblue"/>
+      <rect x="0" y="0" width="25" height="25" fill="url(#Gradient1)"/>
+      <circle cx="25" cy="25" r="20" fill="url(#Gradient2)" fill-opacity=".5"/>
+    </pattern>
   </defs>
 
   <rect x="[length]" y="[length]" width="[size]" height="[size]"/>
@@ -33,6 +40,9 @@ __基本構文__
   <rect x="10" y="10" rx="15" ry="15" width="100" height="100" fill="url(#Gradient1)"/>
   <!-- 例) id:Gradient2 を呼び出す -->
   <rect x="10" y="120" rx="15" ry="15" width="100" height="100" fill="url(#Gradient2)"/>
+  <!-- 例) id:Pattern を呼び出す -->
+  <rect x="120" y="10" width="200" height="200" fill="url(#Pattern)" stroke="black"/>
+
   <g>
   </g>
 </svg>
