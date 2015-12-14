@@ -13,7 +13,7 @@ __基本構文__
       <stop offset="50%" stop-color="black" stop-opacity="0"/>
       <stop offset="100%" stop-color="blue"/>
     </linearGradient>
-    <radialGradient id="Gradient2" cx=".5" cy=".5" r=".5" fx=".25" fy=".25" spreadMethod="repeat">
+    <radialGradient id="Gradient2" cx=".5" cy=".5" r=".5" fx=".25" fy=".25" spreadMethod="repeat" gradientUnits="">
       <stop offset="0%" stop-color="red"/>
       <stop offset="100%" stop-color="blue"/>
     </radialGradient>
