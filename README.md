@@ -48,6 +48,7 @@ __基本構文__
     <tref xlink:href="[Path]"/>
     <textPath xlink:href="[Path]">Hello world</textPath>
   </text>
+  <image x="10" y="10" width="100" height="100" xlink:href="path/to/image">
 
   <!-- 例) Call "#Gradient1" -->
   <rect x="10" y="10" rx="15" ry="15" width="100" height="100" fill="url(#Gradient1)"/>
