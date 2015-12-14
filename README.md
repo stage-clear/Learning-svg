@@ -115,3 +115,4 @@ __プロパティ__
 - [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
 - [スタイル付け – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/styling.html)
 - [svg要素の基本的な使い方まとめ](http://www.h2.dion.ne.jp/~defghi/svgMemo/svgMemo.htm)
+- [SVG Primer](http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
