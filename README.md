@@ -8,6 +8,11 @@ __基本構文__
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
   width="[width]" height="[height]" viewBox="[x] [y] [width] [height]">
   <defs>
+    <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"/>
+      <stop offset="50%" stop-opacity="0"/>
+      <stop offset="100%"/>
+    </linearGradient>
   </defs>
 
   <rect x="[length]" y="[length]" width="[size]" height="[size]"/>
@@ -20,6 +25,8 @@ __基本構文__
   <path d="[command1 x1 y1] [command2 x2 y2] ..."/>
   <text x="[length]" y="[length]" font-size="[length]" text-anchor="[keyword]" fill="[color]">Text</text>
 
+  <!-- 例) id:Gradient1 を呼び出す-->
+  <rect x="10" y="10" rx="15" ry="15" width="100" height="100" fill="url(#Gradient1)"/>
   <g>
   </g>
 </svg>
