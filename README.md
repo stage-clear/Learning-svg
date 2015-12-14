@@ -19,7 +19,7 @@ __基本構文__
       <stop offset="100%" stop-color="blue"/>
     </radialGradient>
 
-    <pattern id="Pattern" x=".05" y=".05" width=".25" height=".25">
+    <pattern id="Pattern" x="5" y="5" width="50" height="50" patternContentUnits="userSpaceOnUse">
       <rect x="0" y="0" width="50" height="50" fill="skyblue"/>
       <rect x="0" y="0" width="25" height="25" fill="url(#Gradient1)"/>
       <circle cx="25" cy="25" r="20" fill="url(#Gradient2)" fill-opacity=".5"/>
