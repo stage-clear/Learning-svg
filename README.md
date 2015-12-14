@@ -24,6 +24,8 @@ __基本構文__
 </svg>
 ```
 
+__CSS プロパティ__
+
 ```css
 svg {
   fill: [color];                /* 塗りつぶしの色 */
@@ -37,6 +39,21 @@ svg {
   stroke-dashoffset: [number];  /* 点線の始まりの位置 */
 }
 ```
+
+## パス
+
+|コマンド|説明|
+|:--|:--|
+|`M` `m`| Move to |
+|`L` `l`| Line to |
+|`H` `h`| Horizontal line |
+|`V` `v`| Vertical line |
+|`Z` `z`| Close path |
+|`C` `c`| bézier curve |
+|`S` `s`| bézier curve |
+|`T` `t`| bézier curve |
+
+
 
 ## ツール
 
