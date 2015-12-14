@@ -8,19 +8,20 @@ __基本構文__
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
   width="[width]" height="[height]" viewBox="[x] [y] [width] [height]">
   <defs>
-    <rect x="10" y="10" width="100" height="100"/>
-    <rect x="10" y="10" width="100" height="100" rx="15" ry="15"/>
-    <circle cx="60" cy="60" r="50"/>
-    <ellipse cx="60" cy="60" rx="50" ry="25"/>
-    <line x1="20" y1="100" x2="100" y2="20" stroke="black" stroke-width="2"/>
-    <polyline points="20,100 40,60 70,80 100,20"/>
-    <polygon points="60,20 100,40 100,80 60,100 20,80 20,40"/>
-    <path d="M 100 100 L 300 100 L 200 300 z" fill="red" stroke-width="3"/>
-    <text x="[number]" y="[number]" font-size="[number]" text-anchor="[keyword]" fill="[color]">Text</text>
-
-    <g>
-    </g>
   </defs>
+
+  <rect x="[length]" y="[length]" width="[size]" height="[size]"/>
+  <rect x="[length]" y="[length]" width="[size]" height="[size]" rx="[length]" ry="[length]"/>
+  <circle cx="[length]" cy="[length]" r="[length]"/>
+  <ellipse cx="[length]" cy="[length]" rx="[length]" ry="[length]"/>
+  <line x1="[length]" y1="[length]" x2="[length]" y2="[length]"/>
+  <polyline points="[x1],[y1] [x2],[y2] [x3],[y3] ..."/>
+  <polygon points="[x1],[y1] [x2],[y2] [x3],[y3] ..."/>
+  <path d="[command1 x1 y1] [command2 x2 y2] ..."/>
+  <text x="[length]" y="[length]" font-size="[length]" text-anchor="[keyword]" fill="[color]">Text</text>
+
+  <g>
+  </g>
 </svg>
 ```
 
