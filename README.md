@@ -9,10 +9,14 @@ __基本構文__
   width="[width]" height="[height]" viewBox="[x] [y] [width] [height]">
   <defs>
     <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%"/>
-      <stop offset="50%" stop-opacity="0"/>
-      <stop offset="100%"/>
+      <stop offset="0%" stop-color="red"/>
+      <stop offset="50%" stop-color="black" stop-opacity="0"/>
+      <stop offset="100%" stop-color="blue"/>
     </linearGradient>
+    <radialGradient id="Gradient2" cx=".5" cy=".5" r=".5" fx=".25" fy=".25">
+      <stop offset="0%" stop-color="red"/>
+      <stop offset="100%" stop-color="blue"/>
+    </radialGradient>
   </defs>
 
   <rect x="[length]" y="[length]" width="[size]" height="[size]"/>
@@ -25,8 +29,10 @@ __基本構文__
   <path d="[command1 x1 y1] [command2 x2 y2] ..."/>
   <text x="[length]" y="[length]" font-size="[length]" text-anchor="[keyword]" fill="[color]">Text</text>
 
-  <!-- 例) id:Gradient1 を呼び出す-->
+  <!-- 例) id:Gradient1 を呼び出す -->
   <rect x="10" y="10" rx="15" ry="15" width="100" height="100" fill="url(#Gradient1)"/>
+  <!-- 例) id:Gradient2 を呼び出す -->
+  <rect x="10" y="120" rx="15" ry="15" width="100" height="100" fill="url(#Gradient2)"/>
   <g>
   </g>
 </svg>
