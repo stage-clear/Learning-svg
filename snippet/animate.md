@@ -28,3 +28,24 @@ __`<circle>` に `<animateMotion>` を紐付ける__
   </circle>
 </svg>
 ```
+
+__CSS を使う__
+
+```html
+<svg id="Svg">
+  <circle id="Circle" cx="10" cy="10" r="5" fill="red"/>
+</svg>
+```
+
+```css
+#Svg {
+  motion-path: path('M 25,50 C 37.5,25 37.5,25 50,0 75,50 75,50 100,100 50,100 50,100 0,100 12.5,75 12.5,75 25,50 Z');
+  animation: motion 3s linear infinite both;
+}
+
+@keyframes motion {
+  100% {
+    motion-offset: 100%;
+  }
+}
+```
