@@ -1,6 +1,6 @@
 # Animate
 
-__<animateMotion> に <circle> を紐付ける__
+__`<animateMotion>` に `<circle>` を紐付ける__
 
 ```html
 <svg>
@@ -15,7 +15,7 @@ __<animateMotion> に <circle> を紐付ける__
 </svg>
 ```
 
-__<circle> に <animateMotion> を紐付ける__
+__`<circle>` に `<animateMotion>` を紐付ける__
 
 ```html
 <svg>
