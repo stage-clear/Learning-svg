@@ -106,10 +106,12 @@ SVG の学習や情報収集のまとめ
 - [SVG Icons - Ready to use SVG Icons for the web.](http://svgicons.sparkk.fr/) - SVG アイコン
 
 ## How to Animating SVG
-- SMIL (Synchronized Multimedia Integration Language)  
+- __SMIL (Synchronized Multimedia Integration Language)__  
   IE未サポートに加えて Blink なども廃止しようとする動きもある
-- CSS Transitions / Animations
-- JavaScript
+- __CSS Transitions / Animations__  
+  すべてのSVGプロパティがアニメーションできるわけではない
+- __JavaScript__
+  画像として取り込んだ SVG はアニメーションできない `<img>` `<picture>` `background-image`
 
 ## References
 - [SVG | MDN](https://developer.mozilla.org/ja/docs/Web/SVG)
