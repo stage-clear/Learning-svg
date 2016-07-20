@@ -1,4 +1,4 @@
-# SVG
+# SVG (Scalable Vector Graphics)
 SVG の学習や情報収集のまとめ
 
 ## 基本構文
