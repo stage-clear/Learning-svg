@@ -1,8 +1,7 @@
 # SVG
-
 SVG の学習や情報収集のまとめ
 
-__基本構文__
+## 基本構文
 
 ```xml
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
@@ -69,10 +68,10 @@ __基本構文__
 </svg>
 ```
 
-__プロパティ__
+## プロパティ
 
 ```css
-/*
+/**
  * @prop {fill} [color] - 塗りつぶしの色
  * @prop {fill-rule} [nonzero | evenodd | inherit] - 図形の内側の領域を定義する
  * @prop {fill-opacity} [opacity] - 塗りつぶしの透明度
@@ -102,17 +101,21 @@ __プロパティ__
 |`A` `a`| Arc |`A [rx] [ry] [x-axis-rotation] [large-arc-flag] [sweep-flag] [x] [y]`|
 
 
-## ツール
-
+## Tools
 - [SVG Path Builder](http://anthonydugois.com/svg-path-builder/) - SVGのパスを生成する
 - [SVG Icons - Ready to use SVG Icons for the web.](http://svgicons.sparkk.fr/) - SVG アイコン
 
+## How to Animating SVG
+- SMIL (Synchronized Multimedia Integration Language)  
+  IE未サポートに加えて Blink なども廃止しようとする動きもある
+- CSS Transitions / Animations
+- JavaScript
 
-## リファレンス
-
+## References
 - [SVG | MDN](https://developer.mozilla.org/ja/docs/Web/SVG)
 - [SVGコードの基本 | CodeGrid](https://app.codegrid.net/entry/svg-basic)
 - [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
 - [スタイル付け – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/styling.html)
 - [svg要素の基本的な使い方まとめ](http://www.h2.dion.ne.jp/~defghi/svgMemo/svgMemo.htm)
 - [SVG Primer](http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
+- [SVGアニメーションの現状(2015/7/10)](http://postd.cc/the-state-of-svg-animation/)
