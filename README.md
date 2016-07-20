@@ -120,4 +120,5 @@ SVG の学習や情報収集のまとめ
 - [スタイル付け – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/styling.html)
 - [svg要素の基本的な使い方まとめ](http://www.h2.dion.ne.jp/~defghi/svgMemo/svgMemo.htm)
 - [SVG Primer](http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
+- [How to Design, Code, and Animate SVGs](http://surbhioberoi.com/a-complete-guide-to-svg/)
 - [SVGアニメーションの現状(2015/7/10)](http://postd.cc/the-state-of-svg-animation/)
