@@ -1,13 +1,13 @@
 # Document Archtecture
 
-## `<svg>`
+## [#](https://triple-underscore.github.io/SVG11/struct.html#SVGElement) `<svg>` - コンテナ要素
 
 ```xml
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
 </svg>
 ```
 
-## `<g>`
+## [#](https://triple-underscore.github.io/SVG11/struct.html#GElement) `<g>` - コンテナ要素
 グラフィックス要素をグループ化するためのコンテナ要素  
 `<desc>` と `<title>` とグループ化の併用により、文書構造と意味論の情報が与えられるようになる
 
@@ -41,8 +41,8 @@ __例2)__
 </svg>
 ```
 
-## `<defs>`
-再利用可能な内容の定義
+## [#](https://triple-underscore.github.io/SVG11/struct.html#DefsElement) `<defs>` - コンテナ要素
+再利用可能な内容の定義をします
 
 __例1)__
 
@@ -64,7 +64,7 @@ __例1)__
 </svg>
 ```
 
-## `<desc>` `<title>`
+## [#](https://triple-underscore.github.io/SVG11/struct.html#DescriptionAndTitleElements) `<desc>` `<title>` - 記述的要素
 コンテナ要素やグラフィック要素には、個別に `<desc>` またはテキストのみの説明を与える `<title>` をあるいは両方を指定することができる
 
 __例1)__
@@ -90,7 +90,7 @@ __例2)__
 </svg>
 ```
 
-## `<symbol>` - コンテナ要素
+## [#](https://triple-underscore.github.io/SVG11/struct.html#SymbolElement) `<symbol>` - コンテナ要素
 `<symbol>` は、グラフィックのひな型オブジェクトを定義し、 `<use>` によりインスタンス化される
 
 - `<symbol>` はそれ自身として描画されない
@@ -110,7 +110,7 @@ __例)__
 </svg>
 ```
 
-## `<use>` - グラフィック要素
+## [#](https://triple-underscore.github.io/SVG11/struct.html#UseElement) `<use>` - グラフィック要素
 `<use>` は、文書の与えられた場所において他の要素を参照し、そのグラフィック内容の取り込みと描画を指する  
 `<image>` とは異なり、`<use>` は、文書全体を参照することはできない
 
@@ -121,10 +121,11 @@ __例) use要素が参照した要素は子要素として存在しない__
 ```xml
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <rect id="a" x="0" y="0" width="100" height="100"/>
+    <circle id="a" x="100" y="0" width="100" height="100"/>
+    <rect id="b" x="0" y="0" width="100" height="100"/>
   </defs>
   
-  <use x="10" y="10" xlink:href="#a"/>
+  <use x="10" y="10" xlink:href="#b"/>
 </svg>
 ```
 
@@ -134,12 +135,25 @@ rect {
   stroke-width: 12px;
 }
 
-/* ↓ これは効かない */
+/* use 参照後も適用されます */
+#b {
+  stroke: green;
+}
+
+/* !! use 参照後のセレクターは適用されません */
+/*    (参照元のセレクターに依存します) */
+rect:first-child {
+  stroke-width: 1px;
+}
+
+/* !! これは効かない */
 use rect {
   stroke: yellow;
   stroke-width: 6px;
 }
 ```
+
+## [#](https://triple-underscore.github.io/SVG11/struct.html#ImageElement) `<image>` - グラフィック要素
 
 ## References 
 - [5. 文書構造](https://triple-underscore.github.io/SVG11/struct.html)
