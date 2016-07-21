@@ -152,6 +152,18 @@ use rect {
   stroke-width: 6px;
 }
 ```
+__例) 参照後でもプロパティ継承は適用される__
+
+```css
+use {
+  fill: yellow;
+}
+
+/* rect が use に参照されたとき `fill: yellow` を継承する */
+rect {
+  fill: inherit;
+}
+```
 
 ## [#](https://triple-underscore.github.io/SVG11/struct.html#ImageElement) `<image>` - グラフィック要素
 
