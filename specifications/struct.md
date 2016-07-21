@@ -90,6 +90,56 @@ __例2)__
 </svg>
 ```
 
+## `<symbol>` - コンテナ要素
+`<symbol>` は、グラフィックのひな型オブジェクトを定義し、 `<use>` によりインスタンス化される
+
+- `<symbol>` はそれ自身として描画されない
+- `<symbol>` は、それを参照する `<use>` で定義されるビューポーと矩型に適宜 拡縮させてはめ込むための、`viewbox` 属性と `preserveAspectRatio` 属性を持つ
+
+`<marker>`,  `<pattern>` は `<symbol>`と密接に関連する
+
+__例)__
+
+```xml
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="a" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <rect width="100" height="100" x="0" y="0"/>
+  </symbol>
+
+  <use xlink:href="#a"/>
+</svg>
+```
+
+## `<use>` - グラフィック要素
+`<use>` は、文書の与えられた場所において他の要素を参照し、そのグラフィック内容の取り込みと描画を指する  
+`<image>` とは異なり、`<use>` は、文書全体を参照することはできない
+
+`<use>` が参照し複製された（ように振る舞う）要素は非公開なので `<use>` の子として現れることはない
+
+__例) use要素が参照した要素は子要素として存在しない__
+
+```xml
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <rect id="a" x="0" y="0" width="100" height="100"/>
+  </defs>
+  
+  <use x="10" y="10" xlink:href="#a"/>
+</svg>
+```
+
+```css
+rect {
+  stroke: blue;
+  stroke-width: 12px;
+}
+
+/* ↓ これは効かない */
+use rect {
+  stroke: yellow;
+  stroke-width: 6px;
+}
+```
 
 ## References 
 - [5. 文書構造](https://triple-underscore.github.io/SVG11/struct.html)
