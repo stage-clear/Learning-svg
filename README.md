@@ -114,3 +114,4 @@ SVG の学習や情報収集のまとめ
 - [SVG Primer](http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
 - [How to Design, Code, and Animate SVGs](http://surbhioberoi.com/a-complete-guide-to-svg/)
 - [SVGアニメーションの現状(2015/7/10)](http://postd.cc/the-state-of-svg-animation/)
+- [Practical SVG](http://alistapart.com/article/practical-svg) - viewBox など
