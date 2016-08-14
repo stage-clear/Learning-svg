@@ -105,14 +105,6 @@ SVG の学習や情報収集のまとめ
 - [SVG Path Builder](http://anthonydugois.com/svg-path-builder/) - SVGのパスを生成する
 - [SVG Icons - Ready to use SVG Icons for the web.](http://svgicons.sparkk.fr/) - SVG アイコン
 
-## How to Animating SVG
-- __SMIL (Synchronized Multimedia Integration Language)__  
-  IE未サポートに加えて Blink なども廃止しようとする動きもある
-- __CSS Transitions / Animations__  
-  すべてのSVGプロパティがアニメーションできるわけではない
-- __JavaScript__
-  画像として取り込んだ SVG はアニメーションできない `<img>` `<picture>` `background-image`
-
 ## References
 - [SVG | MDN](https://developer.mozilla.org/ja/docs/Web/SVG)
 - [SVGコードの基本 | CodeGrid](https://app.codegrid.net/entry/svg-basic)
