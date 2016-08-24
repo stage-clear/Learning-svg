@@ -45,8 +45,8 @@ let res = calcAll(points)
 console.log(`total: ${~~res}`);
 
 function calcAll(points) {
-	let [total, last] = [0, undefined];
-	points.map(
+  let [total, last] = [0, undefined];
+  points.map(
     (p) => {
       let current = { x: p[0], y: p[1] };
       if (last) total += calc( last, current);
@@ -57,12 +57,12 @@ function calcAll(points) {
 }
 
 function calc(p1, p2) {
-	let width = Math.abs(p1.x - p2.x);
+  let width = Math.abs(p1.x - p2.x);
   let height = Math.abs(p1.y - p2.y);
   return pytha(width, height);
 }
 
 function pytha(a, b) {
-	return Math.sqrt(a * a + b * b);
+  return Math.sqrt(a * a + b * b);
 }
 ```
