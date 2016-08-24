@@ -1,7 +1,5 @@
 # Clip path
 
-# Clip Path
-
 例: 円形に切り抜く
 
 ```xml
