@@ -59,10 +59,10 @@ function calcAll(points) {
 function calc(p1, p2) {
   let width = Math.abs(p1.x - p2.x);
   let height = Math.abs(p1.y - p2.y);
-  return pytha(width, height);
+  return diagonal(width, height);
 }
 
-function pytha(a, b) {
+function diagonal(a, b) {
   return Math.sqrt(a * a + b * b);
 }
 ```
