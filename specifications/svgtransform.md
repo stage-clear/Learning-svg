@@ -41,3 +41,6 @@ polyline.points.appendItem(pt3);
 // Points attribute is initalized.
 polyline.points.initialize(pt);
 ```
+
+## links
+- [How to Translate from DOM to SVG Coordinates and Back Again](https://www.sitepoint.com/how-to-translate-from-dom-to-svg-coordinates-and-back-again/)
