@@ -1,6 +1,6 @@
 # Snippets
 
 - [Dash the line](dash.md)
-- [addItem to point attribute](addItem.md)
+- [appendItem to point attribute](appendItem.md)
 - [Animate](animate.md)
 - [SMIL](smil.md)
