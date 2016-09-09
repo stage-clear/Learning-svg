@@ -13,6 +13,12 @@
 </svg>
 ```
 
+```js
+let path = document.getElementById('path');
+console.log( path.getTotalLength() );
+console.log( path.getPointAtLength(10) ); // -> SVGPoint<x, y>
+```
+
 ## Methods
 - `getTotalLength()` - パスの長さを取得
 - `getPointAtLength( float length )` - 与えた長さにおけるパス上の座標を返す
