@@ -85,22 +85,6 @@ SVG の学習や情報収集のまとめ
  */
 ```
 
-## パス
-
-|コマンド|説明|パラメータ|
-|:--|:--|:--|
-|`M` `m`| Move to |`M [x] [y]`|
-|`L` `l`| Line to |`L [x] [y]`|
-|`H` `h`| Horizontal line |`H [x]`|
-|`V` `v`| Vertical line |`V [y]`|
-|`Z` `z`| Close path |`Z`|
-|`C` `c`| Cubic bezier curve |`C [x1] [y1], [x2] [y2], [x] [y]`|
-|`S` `s`| Cubic bezier curve |`S [x2] [y2] [x] [y]`|
-|`Q` `q`| Quadratic bezier curve |`Q [x1] [y1], [x] [y]`|
-|`T` `t`| Quadratic bezier curve |`T [x] [y]`|
-|`A` `a`| Arc |`A [rx] [ry] [x-axis-rotation] [large-arc-flag] [sweep-flag] [x] [y]`|
-
-
 ## Tools
 - [SVG Path Builder](http://anthonydugois.com/svg-path-builder/) - SVGのパスを生成する
 - [SVG Icons - Ready to use SVG Icons for the web.](http://svgicons.sparkk.fr/) - SVG アイコン
