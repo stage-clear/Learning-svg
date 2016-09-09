@@ -13,6 +13,11 @@
 </svg>
 ```
 
+## Methods
+- `getTotalLength()` - パスの長さを取得
+- `getPointAtLength( float length )` - 与えた長さにおけるパス上の座標を返す
+- `getPathSegAtLength( float length)` - 
+
 ## Path commands
 
 |Command|Feature|Parameters|
@@ -28,8 +33,10 @@
 |`T` `t`| Quadratic bezier curve |`T [x] [y]`|
 |`A` `a`| Arc |`A [rx] [ry] [x-axis-rotation] [large-arc-flag] [sweep-flag] [x] [y]`|
 
-
-
 ## Links
 - [SVGPathElement](https://developer.mozilla.org/ja/docs/Web/API/SVGPathElement) - MDN
 - [Paths - SVG](https://developer.mozilla.org/ja/docs/Web/SVG/Tutorial/Paths) - MDN
+
+## References and Hints
+- [SVGのパスに沿ってDOMを動かす](http://qiita.com/takumifukasawa/items/b3df19bba0950d3c64be)
+
