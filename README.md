@@ -1,7 +1,7 @@
 # SVG (Scalable Vector Graphics)
 SVG の学習や情報収集のまとめ
 
-## 基本構文
+## Syntax:
 
 ```xml
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
@@ -68,7 +68,7 @@ SVG の学習や情報収集のまとめ
 </svg>
 ```
 
-## プロパティ
+## Properties:
 
 ```css
 /**
@@ -85,17 +85,20 @@ SVG の学習や情報収集のまとめ
  */
 ```
 
-## Tools
+## Online tools
 - [SVG Path Builder](http://anthonydugois.com/svg-path-builder/) - SVGのパスを生成する
 - [SVG Icons - Ready to use SVG Icons for the web.](http://svgicons.sparkk.fr/) - SVG アイコン
 
-## References
+## References:
 - [SVG | MDN](https://developer.mozilla.org/ja/docs/Web/SVG)
 - [SVGコードの基本 | CodeGrid](https://app.codegrid.net/entry/svg-basic)
-- [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
-- [スタイル付け – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/styling.html)
 - [svg要素の基本的な使い方まとめ](http://www.h2.dion.ne.jp/~defghi/svgMemo/svgMemo.htm)
 - [SVG Primer](http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
 - [How to Design, Code, and Animate SVGs](http://surbhioberoi.com/a-complete-guide-to-svg/)
 - [SVGアニメーションの現状(2015/7/10)](http://postd.cc/the-state-of-svg-animation/)
 - [Practical SVG](http://alistapart.com/article/practical-svg) - viewBox など
+- [SVGのアニメーション手段とその選び方 - Qiita](http://qiita.com/tanishi/items/7c0ada1877804d22a138)
+
+## Links: 
+- [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
+- [スタイル付け – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/styling.html)
