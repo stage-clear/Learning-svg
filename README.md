@@ -98,6 +98,7 @@ SVG の学習や情報収集のまとめ
 - [SVGアニメーションの現状(2015/7/10)](http://postd.cc/the-state-of-svg-animation/)
 - [Practical SVG](http://alistapart.com/article/practical-svg) - viewBox など
 - [SVGのアニメーション手段とその選び方 - Qiita](http://qiita.com/tanishi/items/7c0ada1877804d22a138)
+- [SVGを扱えるJavaScriptライブラリまとめ](https://blog.htmlhifive.com/2017/07/03/svg-library-matome/)
 
 ## Links: 
 - [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
