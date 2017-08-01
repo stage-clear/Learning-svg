@@ -39,3 +39,25 @@ new Vivus('my-svg', {
   file: 'link/to/my.svg',
 })
 ```
+
+## Memos:
+- `type: senario-sync` では DOM の記述の順番にアニメーションする
+- `data-async` 属性を与えると非同期にアニメーションする
+
+## ERROR?
+コールバック関数を渡すとエラーが出力される
+```js
+Uncaught Error: Vivus [constructor]: "callback" parameter must be a function
+    at Vivus.setCallback (vivus.js:503)
+    at new Vivus (vivus.js:329)
+    at (index):54
+Vivus.setCallback @ vivus.js:503
+Vivus @ vivus.js:329
+(anonymous) @ (index):54
+```
+
+```js
+const myCallback = function() {}
+console.log(myCallback instanceOf Function) // true
+console.log(myCallback.constructor === Function) // false
+```
