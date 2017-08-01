@@ -1,6 +1,6 @@
 # Vivus
 - [vivus.js - svg animation](https://maxwellito.github.io/vivus/)
-- [Github](https://github.com/maxwellito/vivus)
+- [GitHub - maxwellito/vivus](https://github.com/maxwellito/vivus)
 - [vivus - cdnjs.com](https://cdnjs.com/libraries/vivus)
 
 ## Install
