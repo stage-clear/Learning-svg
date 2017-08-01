@@ -40,6 +40,9 @@ new Vivus('my-svg', {
 })
 ```
 
+## Examples:
+- [Basic](https://jsfiddle.net/walfo/aax6yjy3/)
+
 ## Memos:
 - `type: senario-sync` では DOM の記述の順番にアニメーションする
 - `data-async` 属性を与えると非同期にアニメーションする
