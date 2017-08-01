@@ -1,6 +1,6 @@
 # Snap.svg
 - [Snap.svg](http://snapsvg.io/)
-- [Github](https://github.com/adobe-webplatform/Snap.svg/)
+- [GitHub - codegrid/2015-snapsvg](https://github.com/adobe-webplatform/Snap.svg/)
 - [snap.svg - cdnjs.com](https://cdnjs.com/libraries/snap.svg/)
 
 ## Install
