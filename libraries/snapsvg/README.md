@@ -13,13 +13,13 @@
 
 ```js
 const $elem = Snap('.selector')
-const defaultState = { width: 128, height: 128 }
-const animatedState = { width: 256, height: 256 }
-const duration = 1000
-const easing = mina.Linear
+const $button = document.querySelector('button')
 const play = () => {
-  $elem.attr(defaultState)
-  $elem.animate(animatedState, duration, easing)
+  $elem.attr({ width: 128, height: 128 })
+  $elem.animate({
+    width: 256,
+    height: 256,
+  }, 1000)
 }
 $button.addEventListener('click', play, false)
 ```
