@@ -24,8 +24,28 @@ const play = () => {
 $button.addEventListener('click', play, false)
 ```
 
-## mina easings
+## methods
+- `Element.attr()`
+- `Element.animate()`
+- `Element.stop()` - 要素に指定されているアニメーションを停止
+- `Element.inAnim()` - 要素の指定されているアニメーションを全て取得
+- `status()` - アニメーションの進行度を上書き
+- `stop()` - アニメーションを個別に停止
 
+```js
+// アニメーションの実行を判定
+function isMoving() {
+  var anims = $circle.inAnim()
+  
+  if (anims.length === 0) {
+    alert(false)
+  } else {
+    alert(true)
+  }
+}
+```
+
+## mina easings
 - `mina.backin`
 - `mina.backout`
 - `mina.bounce`
