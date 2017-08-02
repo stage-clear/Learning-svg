@@ -24,6 +24,27 @@ const play = () => {
 $button.addEventListener('click', play, false)
 ```
 
+## mina easings
+
+- `mina.backin`
+- `mina.backout`
+- `mina.bounce`
+- `mina.easein`
+- `mina.easeinout`
+- `mina.elastic`
+- `mina.linear`
+
+__Custom easing__
+
+```js
+// Example:
+var customEasing = (t) => {
+  return t < 0.5
+    ? 0.5 * (1.0 - mina.bounce(1.0 - t * 2.0))
+    : 0.5 * mina.bounce(t * 2.0 - 1.0) + 0.5
+}
+```
+
 ## References:
 - [Snap.svgの使い方まとめ](http://defghi1977.html.xdomain.jp/tech/snapsvg/snapsvg.xhtml)
 - [Snap.svgで快適SVGアニメーション](https://app.codegrid.net/entry/snapsvg-1)
