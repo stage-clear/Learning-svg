@@ -2,8 +2,8 @@
 - [Snap.svgで快適SVGアニメーション](https://app.codegrid.net/series/2015-snapsvg)
 
 
+__アニメーションが実行中かどうかの判定__:<br>
 ```js
-// アニメーションの実行を判定
 function isMoving() {
   var anims = $circle.inAnim()
   
@@ -15,10 +15,9 @@ function isMoving() {
 }
 ```
 
-__Custom easing__
+__カスタムイージングの作成__:<br>
 
 ```js
-// Example:
 var customEasing = (t) => {
   return t < 0.5
     ? 0.5 * (1.0 - mina.bounce(1.0 - t * 2.0))
@@ -26,13 +25,18 @@ var customEasing = (t) => {
 }
 ```
 
+__空のSVG要素の作成__:<br>
+
 ```js
 // 空のSVG要素の生成
 var $root = Snap() // width: 100%, height: 100%
 var $root = Snap(100, 100) // width: 100px, height: 100%
 var placeholder = document.getElement('placehoder')
 $root.appendTo(placeholder)
+```
 
+__要素の取得のしかた__:<br>
+```js
 // 存在している要素の取得（1）: snap(DOM)
 // <circle id="c1" ... />
 var circle = document.getElementById('c1')
@@ -69,8 +73,8 @@ var $group = Snap('#group')
 var circleSet = $group.selectAll('.circle')
 ```
 
+__Snap.parse__:<br>
 ```js
-// Snap.parse:
 var svgSource = '<circle ... />'
 var $placeholder = Snap('#placeholder')
 var $content = Snap.parse(svgSource)
