@@ -41,6 +41,9 @@ $button.addEventListener('click', play, false)
 - `mina.elastic`
 - `mina.linear`
 
+## Tutirials:
+- [Snap.svgで快適SVGアニメーション](tutorials/codegrid.md)
+
 ## References:
 - [Snap.svgの使い方まとめ](http://defghi1977.html.xdomain.jp/tech/snapsvg/snapsvg.xhtml)
 - [Snap.svgで快適SVGアニメーション](https://app.codegrid.net/entry/snapsvg-1)
