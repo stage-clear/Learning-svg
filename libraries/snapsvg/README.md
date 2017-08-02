@@ -25,10 +25,10 @@ $button.addEventListener('click', play, false)
 ```
 
 ## methods
-- `Element.attr()`
-- `Element.animate()`
-- `Element.stop()` - 要素に指定されているアニメーションを停止
-- `Element.inAnim()` - 要素の指定されているアニメーションを全て取得
+- [`Element.attr()`](http://snapsvg.io/docs/#Element.attr)
+- [`Element.animate()`](http://snapsvg.io/docs/#Element.animate)
+- [`Element.stop()`](http://snapsvg.io/docs/#Element.stop) - 要素に指定されているアニメーションを停止
+- [`Element.inAnim()`](http://snapsvg.io/docs/#Element.inAnim) - 要素の指定されているアニメーションを全て取得
 - `status()` - アニメーションの進行度を上書き
 - `stop()` - アニメーションを個別に停止
 
