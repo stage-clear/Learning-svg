@@ -64,3 +64,7 @@ const myCallback = function() {}
 console.log(myCallback instanceOf Function) // true
 console.log(myCallback.constructor === Function) // false
 ```
+
+
+## References
+- [The Best Way to Create Fantastic 'Invisible Pen' Effects in SVG](https://www.sitepoint.com/how-to-create-the-invisible-pen-effect-in-svg-using-vivus-js/)
