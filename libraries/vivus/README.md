@@ -14,16 +14,16 @@ NPM:
 $ npm install vivus
 ```
 
-## Using basically
+## Using simply
 
 ```html
-// Inline SVG
+<!-- Inline SVG -->
 <svg id="my-svg"> ... </svg>
 
-// Dynamic load
+<!-- Dynamic load -->
 <object id="my-svg" type="image/svg-xml" data="link/to/my.svg"></object>
 
-// Dynamic include to DOM
+<!-- Dynamic include to DOM -->
 <div id="my-svg"></div>
 ```
 
